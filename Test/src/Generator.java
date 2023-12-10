@@ -20,7 +20,7 @@ public class Generator extends Thread{
 
         while(true)
         {
-            int randomInt = r.nextInt();
+            int randomInt = r.nextInt(max-min) + min;
             synchronized (L)
             {
                 if(L.size() < n)
