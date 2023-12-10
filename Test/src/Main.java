@@ -11,7 +11,7 @@ public class Main {
         int n = 1000000;
         ArrayList<Integer> L = new ArrayList<>();
         ArrayList<Generator> gens = new ArrayList<>();
-        while(L.size() < n)
+        for(int i=0; i<10; i++)
         {
             Generator g = new Generator(L, 0, 10000, n);
             g.start();
